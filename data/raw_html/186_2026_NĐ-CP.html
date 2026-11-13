@@ -1,0 +1,358 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+            html { overflow-y: scroll; }
+            body {
+                margin: 0;
+                background: #e8e8e8;
+            }
+            .docx-viewport { width: 100%; overflow: hidden; }
+            .docx-page {
+                font-family: 'Times New Roman', serif;
+                background: white;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 56.7pt 56.7pt 56.7pt 56.7pt;
+                margin: 0;
+                transform-origin: top left;
+                text-align: justify;
+                color: #333;
+            }
+            p { margin: 0; min-height: 1.2em; }
+            table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+            th, td { padding: 10px; }
+            span { font-family: inherit; }
+            .num-prefix {
+                display: inline-block;
+                min-width: 20px;
+                margin-right: 5px;
+                font-weight: inherit;
+            }
+            .docx-header {
+                text-align: center;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 10px;
+            }
+            .docx-header p { text-align: center; margin: 5px 0; white-space: pre; }
+            .docx-footer {
+                text-align: center;
+                margin-top: 20px;
+                border-top: 1px solid #ccc;
+                padding-top: 10px;
+            }
+            .docx-footer p { text-align: center; margin: 5px 0; }
+            .footnote-ref a { font-size: 0.75em; vertical-align: super; text-decoration: none; color: #0563C1; }
+            .footnotes-sep { margin-top: 2em; border: none; border-top: 1px solid #ccc; }
+            .footnotes { font-size: 0.85em; margin-top: 1em; }
+            .footnotes-list { padding-left: 1.5em; }
+            .footnote-item { margin-bottom: 0.5em; }
+            .footnote-backref { text-decoration: none; margin-left: 0.5em; }
+        </style>
+  <script>
+        document.addEventListener('click', function(e) {
+            var a = e.target.closest('a[href^="#"]');
+            if (!a) return;
+            var id = a.getAttribute('href').slice(1);
+            var target = document.getElementById(id);
+            if (!target) return;
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+        (function() {
+            var PAGE_W_PT = 595.3;
+            var naturalW = PAGE_W_PT * 96 / 72;
+            function fit() {
+                var page = document.querySelector('.docx-page');
+                var vp = document.querySelector('.docx-viewport');
+                if (!page || !vp) return;
+                page.style.width = naturalW + 'px';
+                page.style.transform = 'none';
+                var naturalH = page.offsetHeight;
+                var scale = vp.clientWidth / naturalW;
+                page.style.transform = 'scale(' + scale + ')';
+                vp.style.height = (naturalH * scale) + 'px';
+            }
+            window.addEventListener('resize', fit);
+            window.addEventListener('load', fit);
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', fit);
+            } else {
+                fit();
+            }
+        })();
+        </script>
+ </head>
+ <body>
+  <main class="docx-viewport">
+   <article class="docx-page" data-page-width-pt="595.3">
+    <table border="0" class="prov-table" style="border-collapse: collapse; width: 100%; margin: 15px 0;">
+     <tbody>
+      <tr>
+       <td style="padding: 8px;">
+        <p style="text-align: center; margin: 6.0pt 0 0pt"><span style="font-size: 12.0pt"><strong>CHÍNH PHỦ<br>
+            -------</strong></span></p></td>
+       <td style="padding: 8px;">
+        <p style="text-align: center; margin: 6.0pt 0 0pt"><span style="font-size: 12.0pt"><strong>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br>
+            Độc lập - Tự do - Hạnh phúc <br>
+            ---------------</strong></span></p></td>
+      </tr>
+      <tr>
+       <td style="padding: 8px;">
+        <p style="text-align: center; margin: 6.0pt 0 0pt"><span style="font-size: 12.0pt">Số: 186/2026/NĐ-CP</span></p></td>
+       <td style="padding: 8px;">
+        <p style="text-align: right; margin: 6.0pt 0 0pt"><span style="font-size: 12.0pt"><em>Hà Nội, ngày 26 tháng 5 năm 2026</em></span></p></td>
+      </tr>
+     </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <p style="text-align: center; margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>NGHỊ ĐỊNH</strong></span></p>
+    <p style="text-align: center; margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA NGHỊ ĐỊNH SỐ <a href="/van-ban/chi-tiet/31905" target="_blank" rel="noopener noreferrer">99/2013/NĐ-CP</a> NGÀY 29 THÁNG 8 NĂM 2013 CỦA CHÍNH PHỦ QUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC SỞ HỮU CÔNG NGHIỆP ĐÃ ĐƯỢC SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU THEO NGHỊ ĐỊNH SỐ <a href="/van-ban/chi-tiet/154199" target="_blank" rel="noopener noreferrer">126/2021/NĐ-CP</a> NGÀY 30 THÁNG 12 NĂM 2021 VÀ NGHỊ ĐỊNH SỐ <a href="/van-ban/chi-tiet/170812" target="_blank" rel="noopener noreferrer">46/2024/NĐ-CP</a> NGÀY 04 THÁNG 5 NĂM 2024 CỦA CHÍNH PHỦ</span></p>
+    <p style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><em>Căn cứ Luật Tổ chức Chính phủ số <a href="/van-ban/chi-tiet/175258" target="_blank" rel="noopener noreferrer">63/2025/QH15</a>;</em></span></p>
+    <p style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><em>Căn cứ Luật Tổ chức chính quyền địa phương số <a href="/van-ban/chi-tiet/178340" target="_blank" rel="noopener noreferrer">72/2025/QH15</a>;</em></span></p>
+    <p style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><em>Căn cứ Luật Xử lý vi phạm hành chính số <a href="/van-ban/chi-tiet/27621" target="_blank" rel="noopener noreferrer">15/2012/QH13</a> được sửa đổi, bổ sung bởi Luật Hải quan số <a href="/van-ban/chi-tiet/36878" target="_blank" rel="noopener noreferrer">54/2014/QH13</a>, Luật Thủy sản số <a href="/van-ban/chi-tiet/126307" target="_blank" rel="noopener noreferrer">18/2017/QH14</a>, Luật số <a href="/van-ban/chi-tiet/146541" target="_blank" rel="noopener noreferrer">67/2020/QH14</a>, Luật số <a href="/van-ban/chi-tiet/160606" target="_blank" rel="noopener noreferrer">09/2022/QH15</a>, Luật Thanh tra số <a href="/van-ban/chi-tiet/170446" target="_blank" rel="noopener noreferrer">11/2022/QH15</a>, Luật số <a href="/van-ban/chi-tiet/173331" target="_blank" rel="noopener noreferrer">56/2024/QH15</a> và Luật số <a href="/van-ban/chi-tiet/178737" target="_blank" rel="noopener noreferrer">88/2025/QH15</a>;</em></span></p>
+    <p style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><em>Căn cứ Luật Sở hữu trí tuệ số <a href="/van-ban/chi-tiet/16748" target="_blank" rel="noopener noreferrer"></a><a href="/van-ban/chi-tiet/17050" target="_blank" rel="noopener noreferrer">50/2005/QH11</a> được sửa đổi, bổ sung bởi Luật số <a href="/van-ban/chi-tiet/11716" target="_blank" rel="noopener noreferrer"></a><a href="/van-ban/chi-tiet/23823" target="_blank" rel="noopener noreferrer">36/2009/QH12</a>, Luật số <a href="/van-ban/chi-tiet/136041" target="_blank" rel="noopener noreferrer">42/2019/QH14</a>, Luật số <a href="/van-ban/chi-tiet/157722" target="_blank" rel="noopener noreferrer">07/2022/QH15</a>, Luật Khoa học, công nghệ và đổi mới sáng tạo số <a href="/van-ban/chi-tiet/179265" target="_blank" rel="noopener noreferrer">93/2025/QH15</a> và Luật số <a href="/van-ban/chi-tiet/187492" target="_blank" rel="noopener noreferrer">131/2025/QH15</a>;</em></span></p>
+    <p style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><em>Căn cứ Luật Công nghệ thông tin số <a href="/van-ban/chi-tiet/15066" target="_blank" rel="noopener noreferrer">67/2006/QH11</a> được sửa đổi, bổ sung bởi Luật Quy hoạch số <a href="/van-ban/chi-tiet/131014" target="_blank" rel="noopener noreferrer"></a><a href="/van-ban/chi-tiet/61ec0a10-63dc-11f1-91c9-87ab78413dde" target="_blank" rel="noopener noreferrer">21/2017/QH14</a>, Luật Giao dịch điện tử số <a href="/van-ban/chi-tiet/165913" target="_blank" rel="noopener noreferrer">20/2023/QH15</a>, Luật Viễn thông số <a href="/van-ban/chi-tiet/165912" target="_blank" rel="noopener noreferrer">24/2023/QH15</a>, Luật Công nghiệp công nghệ số <a href="/van-ban/chi-tiet/179989" target="_blank" rel="noopener noreferrer">71/2025/QH15</a> và Luật Thanh tra số <a href="/van-ban/chi-tiet/178964" target="_blank" rel="noopener noreferrer">84/2025/QH15</a>;</em></span></p>
+    <p style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><em>Căn cứ Luật Cạnh tranh số <a href="/van-ban/chi-tiet/133401" target="_blank" rel="noopener noreferrer">23/2018/QH14</a>;</em></span></p>
+    <p style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><em>Căn cứ Luật Doanh nghiệp số <a href="/van-ban/chi-tiet/90bc6e90-a74b-11f1-88b2-a9f8abf60c77" target="_blank" rel="noopener noreferrer"></a><a href="/van-ban/chi-tiet/142847" target="_blank" rel="noopener noreferrer"></a><a href="/van-ban/chi-tiet/142881" target="_blank" rel="noopener noreferrer">59/2020/QH14</a> được sửa đổi, bổ sung bởi Luật số <a href="/van-ban/chi-tiet/152951" target="_blank" rel="noopener noreferrer">03/2022/QH15</a> và Luật số <a href="/van-ban/chi-tiet/179095" target="_blank" rel="noopener noreferrer">76/2025/QH15</a>;</em></span></p>
+    <p style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><em>Căn cứ Luật Thanh tra số <a href="/van-ban/chi-tiet/178964" target="_blank" rel="noopener noreferrer">84/2025/QH15</a>;</em></span></p>
+    <p style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><em>Theo đề nghị của Bộ trưởng Bộ Khoa học và Công nghệ;</em></span></p>
+    <p style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><em>Chính phủ ban hành Nghị định sửa đổi, bổ sung một số điều của Nghị định số <a href="/van-ban/chi-tiet/31905" target="_blank" rel="noopener noreferrer">99/2013/NĐ-CP</a> ngày 29 tháng 8 năm 2013 của Chính phủ quy định xử phạt vi phạm hành chính trong lĩnh vực sở hữu công nghiệp đã được sửa đổi, bổ sung bởi Nghị định số <a href="/van-ban/chi-tiet/154199" target="_blank" rel="noopener noreferrer">126/2021/NĐ-CP</a> ngày 30 tháng 12 năm 2021 và Nghị định số <a href="/van-ban/chi-tiet/170812" target="_blank" rel="noopener noreferrer">46/2024/NĐ-CP</a> ngày 04 tháng 5 năm 2024 của Chính phủ.</em></span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="bcbf4071-fb87-4f2c-83b1-ef6a6eb80742" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 1. Sửa đổi, bổ sung điểm a khoản 3 Điều 3</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">“a) Buộc loại bỏ yếu tố vi phạm trên hàng hóa, phương tiện kinh doanh; buộc hoàn trả tên miền; buộc thu hồi tên miền; ngăn chặn truy cập tên miền xâm phạm quyền sở hữu công nghiệp; buộc thay đổi tên doanh nghiệp, tên hộ kinh doanh; loại bỏ yếu tố vi phạm trong tên doanh nghiệp, tên hộ kinh doanh;”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="aa154fe6-d5a8-4d08-93c2-9bb036020fac" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 2. Sửa đổi, bổ sung điểm c khoản 18 Điều 14</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">“c) Buộc thay đổi tên doanh nghiệp, tên hộ kinh doanh loại bỏ yếu tố vi phạm trong tên doanh nghiệp, tên hộ kinh doanh đối với hành vi vi phạm quy định tại điểm a khoản 13, khoản 15 Điều này; buộc hoàn trả tên miền; ngăn chặn truy cập tên miền xâm phạm quyền sở hữu công nghiệp đối với hành vi vi phạm quy định tại điểm a khoản 16 Điều này;”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="4129e50f-df62-4c7e-ab68-5829595d6fc5" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 3. Sửa đổi, bổ sung Điều 15</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>“Điều 15. Phân định thẩm quyền xử phạt</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">1. Cục trưởng Cục Sở hữu trí tuệ, Trưởng đoàn kiểm tra chuyên ngành sở hữu công nghiệp do Cục trưởng Cục Sở hữu trí tuệ thành lập, Trưởng đoàn kiểm tra chuyên ngành sở hữu công nghiệp do Bộ trưởng Bộ Khoa học và Công nghệ thành lập trong thời hạn kiểm tra và phạm vi nhiệm vụ được giao có thẩm quyền xử phạt các hành vi vi phạm quy định tại Chương II Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">2. Quản lý thị trường, Trưởng đoàn kiểm tra chuyên ngành do Bộ trưởng Bộ Công Thương thành lập trong thời hạn kiểm tra và phạm vi nhiệm vụ được giao có thẩm quyền xử phạt các hành vi vi phạm sau đây:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Hành vi vi phạm quy định tại Điều 12 và Điều 13 Nghị định này trong hoạt động sản xuất, buôn bán, chào hàng, vận chuyển, tàng trữ, trưng bày hàng hóa, kinh doanh dịch vụ thương mại tại thị trường trong nước;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Hành vi vi phạm quy định tại các Điều 6, 9, 11 và 14 Nghị định này trong hoạt động buôn bán, chào hàng, vận chuyển, tàng trữ, trưng bày hàng hóa, kinh doanh dịch vụ thương mại tại thị trường trong nước. Trong trường hợp xử lý hành vi vi phạm quy định tại điểm b khoản 2 Điều này mà xác định được cơ sở sản xuất loại hàng hóa đó thì Quản lý thị trường, Trưởng đoàn kiểm tra chuyên ngành do Bộ trưởng Bộ Công Thương thành lập có thẩm quyền tiếp tục xử lý hành vi vi phạm tại cơ sở sản xuất.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">3. Hải quan, Trưởng đoàn kiểm tra chuyên ngành do Bộ trưởng Bộ Tài chính thành lập trong thời hạn kiểm tra và phạm vi nhiệm vụ được giao có thẩm quyền xử phạt hành vi vi phạm quy định tại các Điều 6, 9, 10, 11, 12, 13 và 14 Nghị định này trong hoạt động nhập khẩu hàng hóa, quá cảnh, hoạt động vận chuyển hàng hóa trong địa bàn hoạt động hải quan.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">4. Công an, Trưởng đoàn kiểm tra chuyên ngành do Bộ trưởng Bộ Công an thành lập trong thời hạn kiểm tra và phạm vi nhiệm vụ được giao có thẩm quyền xử phạt hành vi vi phạm quy định tại khoản 1 Điều 5, điểm e khoản 1 và khoản 4 Điều 7, khoản 4 Điều 8, các Điều 9, 12 và 13 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">5. Chủ tịch Ủy ban nhân dân cấp tỉnh, cấp xã có thẩm quyền xử phạt hành vi vi phạm trong lĩnh vực sở hữu công nghiệp xảy ra tại địa phương theo nguyên tắc xác định và phân định thẩm quyền xử phạt vi phạm hành chính quy định tại Điều 37a và Điều 52 của Luật Xử lý vi phạm hành chính.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">6. Giám đốc Sở Khoa học và Công nghệ có thẩm quyền xử phạt các hành vi vi phạm quy định tại Chương II Nghị định này xảy ra tại địa phương theo nguyên tắc xác định và phân định thẩm quyền xử phạt vi phạm hành chính quy định tại Điều 37a và Điều 52 của Luật Xử lý vi phạm hành chính.”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="5573c612-c7a0-4521-a22b-9d087f025f3c" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 4. Bổ sung Điều 15a vào sau Điều 15</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>“Điều 15a. Thẩm quyền xử phạt của các chức danh thuộc Bộ Khoa học và Công nghệ</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">1. Trưởng đoàn kiểm tra chuyên ngành sở hữu công nghiệp do Cục trưởng Cục Sở hữu trí tuệ thành lập có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 200.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">2. Cục trưởng Cục Sở hữu trí tuệ có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 250.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">3. Trưởng đoàn kiểm tra chuyên ngành sở hữu công nghiệp do Bộ trưởng Bộ Khoa học và Công nghệ thành lập có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 250.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại khoản 3 Điều 3 Nghị định này.”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="0673a431-cf81-4052-8781-1bafeb67c048" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 5. Bãi bỏ Điều 16 và Điều 17</strong></span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="99d5da00-9c1f-485d-b957-035d054bd4e8" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 6. Sửa đổi, bổ sung Điều 18</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>“Điều 18. Thẩm quyền xử phạt của Quản lý thị trường</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">1. Kiểm soát viên thị trường đang thi hành công vụ có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 25.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tịch thu tang vật, phương tiện vi phạm hành chính có giá trị không vượt quá 02 lần mức tiền phạt được quy định tại điểm b khoản này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">2. Đội trưởng Đội Quản lý thị trường thuộc Chi cục Quản lý thị trường thuộc Sở Công Thương có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 75.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tịch thu tang vật, phương tiện vi phạm hành chính có giá trị không vượt quá 02 lần mức tiền phạt được quy định tại điểm b khoản này;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm a, b, c, d, đ, g và h khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">3. Chi cục trưởng Chi cục Quản lý thị trường, Trưởng phòng Nghiệp vụ Quản lý thị trường thuộc Cục Quản lý và Phát triển thị trường trong nước có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 125.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm a, b, c, d, đ, g và h khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">4. Cục trưởng Cục Quản lý và Phát triển thị trường trong nước có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 250.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm a, b, c, d, đ, g và h khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">5. Trưởng đoàn kiểm tra chuyên ngành do Bộ trưởng Bộ Công Thương thành lập có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 250.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm a, b, c, d, đ, g và h khoản 3 Điều 3 Nghị định này.”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="31ec8b35-7163-4df0-bb04-3643cc9170a1" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 7. Sửa đổi, bổ sung Điều 19</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>“Điều 19. Thẩm quyền xử phạt của Hải quan</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">1. Công chức Hải quan đang thi hành công vụ có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 12.500.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tịch thu tang vật, phương tiện vi phạm hành chính có giá trị không vượt quá 02 lần mức tiền phạt được quy định tại điểm b khoản này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">2. Đội trưởng Hải quan cửa khẩu/ngoài cửa khẩu, Đội trưởng Đội Phúc tập và Kiểm tra sau thông quan, Đội trưởng Đội Thông quan, Đội trưởng Đội Kiểm soát hải quan thuộc Chi cục Hải quan khu vực, Đội trưởng Đội kiểm soát chống buôn lậu thuộc Chi cục Điều tra chống buôn lậu; Đội trưởng Đội Kiểm tra sau thông quan khu vực thuộc Chi cục Kiểm tra sau thông quan có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 75.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tịch thu tang vật, phương tiện vi phạm hành chính có giá trị không vượt quá 02 lần mức tiền phạt được quy định tại điểm b khoản này;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm a, b, c, d, đ, g và h khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">3. Chi cục trưởng Chi cục Điều tra chống buôn lậu, Chi cục trưởng Chi cục Kiểm tra sau thông quan, Chi cục trưởng Chi cục Hải quan khu vực có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 125.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm a, b, c, d, đ, g và h khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">4. Cục trưởng Cục Hải quan có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 250.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm a, b, c, d, đ, g và h khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">5. Trưởng đoàn kiểm tra chuyên ngành do Bộ trưởng Bộ Tài chính thành lập có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 250.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm a, b, c, d, đ, g và h khoản 3 Điều 3 Nghị định này.”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="c27ed560-2245-460a-b949-1ee6ac7505f8" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 8. Sửa đổi, bổ sung Điều 20</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>“Điều 20. Thẩm quyền xử phạt của Công an nhân dân</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">1. Chiến sĩ Công an nhân dân đang thi hành công vụ có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 25.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tịch thu tang vật, phương tiện vi phạm hành chính có giá trị không vượt quá 02 lần mức tiền phạt được quy định tại điểm b khoản này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">2. Trưởng đồn Công an, Trưởng trạm, Đội trưởng có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 75.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính có giá trị không vượt quá 02 lần mức tiền phạt được quy định tại điểm b khoản này;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại điểm d khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">3. Trưởng Công an cấp xã có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 125.000.000 đồng; </span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm b, d, g, h và i khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">4. Trưởng phòng nghiệp vụ thuộc Cục An ninh kinh tế, Trưởng phòng nghiệp vụ thuộc Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao, Trưởng phòng Công an cấp tỉnh bao gồm: Trưởng phòng Cảnh sát điều tra tội phạm về tham nhũng, kinh tế, buôn lậu, môi trường, Trưởng phòng An ninh kinh tế, Trưởng phòng An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao, Trưởng phòng Cảnh sát quản lý hành chính về trật tự xã hội, Chánh Văn phòng Cơ quan Cảnh sát điều tra Công an cấp tỉnh:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 200.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm b, d, g, h và i khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">5. Giám đốc Công an cấp tỉnh có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 250.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm b, d, g, h và i khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">6. Cục trưởng Cục Cảnh sát điều tra tội phạm về tham nhũng, kinh tế, buôn lậu, Cục trưởng Cục An ninh kinh tế, Cục trưởng Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao, Cục trưởng Cục Cảnh sát quản lý hành chính về trật tự xã hội, Chánh Văn phòng Cơ quan Cảnh sát điều tra Bộ Công an có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 250.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm b, d, g, h và i khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">7. Trưởng đoàn kiểm tra chuyên ngành do Bộ trưởng Bộ Công an thành lập có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 250.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm b, d, g, h và i khoản 3 Điều 3 Nghị định này.”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="9a409ee3-7621-475c-b4bd-50d867b13965" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 9. Sửa đổi, bổ sung Điều 21</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>“Điều 21. Thẩm quyền xử phạt của Chủ tịch Ủy ban nhân dân các cấp và Giám đốc Sở Khoa học và Công nghệ</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">1. Chủ tịch Ủy ban nhân dân cấp xã có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 125.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm a, b, d, đ, g và h khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">2. Giám đốc Sở Khoa học và Công nghệ có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 200.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại các điểm a, b, d, đ, g, h và i khoản 3 Điều 3 Nghị định này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">3. Chủ tịch Ủy ban nhân dân cấp tỉnh có quyền:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Phạt cảnh cáo;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Phạt tiền đến 250.000.000 đồng;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Tịch thu tang vật, phương tiện vi phạm hành chính;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">d) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động kinh doanh hàng hóa, dịch vụ vi phạm có thời hạn;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">đ) Áp dụng biện pháp khắc phục hậu quả quy định tại khoản 3 Điều 3 Nghị định này.”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="db60b0c2-fa58-49aa-a49d-999e430d51ed" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 10. Sửa đổi, bổ sung Điều 21a</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>“Điều 21a. Thẩm quyền lập biên bản vi phạm hành chính</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">Người có thẩm quyền lập biên bản vi phạm hành chính về sở hữu công nghiệp gồm:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">1. Người có thẩm quyền xử phạt vi phạm hành chính về sở hữu công nghiệp được quy định từ Điều 15a đến Điều 21 Nghị định này đang thi hành công vụ, nhiệm vụ đối với hành vi vi phạm hành chính theo thẩm quyền quy định tại Điều 15 Nghị định này và chức năng, nhiệm vụ, quyền hạn được giao;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">2. Người thuộc lực lượng Công an nhân dân đang thi hành công vụ, nhiệm vụ; công chức, viên chức trong các cơ quan quy định từ Điều 15a đến Điều 21 Nghị định này đang thi hành công vụ, nhiệm vụ đối với hành vi vi phạm hành chính theo thẩm quyền quy định tại Điều 15 Nghị định này và chức năng, nhiệm vụ, quyền hạn được giao; thanh tra viên, thành viên đoàn thanh tra, công chức thuộc cơ quan thanh tra khi thực hiện thanh tra trong lĩnh vực sở hữu công nghiệp.”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="6cdc149e-7e24-45cb-b862-38f86a28df02" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 11. Sửa đổi, bổ sung khoản 3 Điều 23</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">“3. Văn bản ủy quyền nộp kèm theo đơn yêu cầu xử lý xâm phạm phải là bản chính hoặc bản sao có chứng thực từ bản chính. Văn bản ủy quyền làm bằng tiếng nước ngoài thì phải nộp kèm theo bản dịch sang tiếng Việt có chứng thực của chính quyền địa phương hoặc có cam kết và xác nhận của đại diện sở hữu công nghiệp là bên nhận ủy quyền.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">Trường hợp văn bản ủy quyền là bản sao của bản chính văn bản ủy quyền đã nộp trong hồ sơ trước đó cho cùng cơ quan xử lý xâm phạm thì cũng được coi là hợp lệ, với điều kiện người nộp đơn phải chỉ rõ số hồ sơ đã nộp và bản gốc văn bản ủy quyền được chỉ dẫn vẫn đang có hiệu lực và đúng nội dung ủy quyền.”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="7773d375-f087-4886-a80a-e59532fa1f68" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 12. Sửa đổi, bổ sung Điều 30</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>“Điều 30. Nguyên tắc xử phạt và thủ tục xử phạt</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">1. Khi phát hiện vi phạm hành chính trong lĩnh vực sở hữu công nghiệp, người có thẩm quyền xử phạt quy định từ Điều 15a đến Điều 21 Nghị định này và công chức, viên chức đang thi hành công vụ có thẩm quyền lập biên bản vi phạm hành chính.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">2. Mỗi hành vi vi phạm hành chính chỉ bị xử phạt một lần. Trường hợp nhiều tổ chức, cá nhân cùng thực hiện một hành vi vi phạm hành chính thì mỗi tổ chức, cá nhân vi phạm đều bị xử phạt đối với hành vi đó. Trường hợp một tổ chức, cá nhân thực hiện nhiều hành vi vi phạm hành chính hoặc thực hiện hành vi vi phạm hành chính nhiều lần theo quy định của Nghị định này thì bị xử phạt đối với từng hành vi vi phạm.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">3. Việc xác định hành vi vi phạm hành chính đã kết thúc, hành vi vi phạm hành chính đang thực hiện để tính thời hiệu xử phạt vi phạm hành chính thực hiện theo quy định tại khoản 1 Điều 8 Nghị định số <a href="/van-ban/chi-tiet/151943" target="_blank" rel="noopener noreferrer">118/2021/NĐ-CP</a> ngày 23 tháng 12 năm 2021 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Xử lý vi phạm hành chính đã được sửa đổi, bổ sung bởi Nghị định số <a href="/van-ban/chi-tiet/176454" target="_blank" rel="noopener noreferrer">68/2025/NĐ-CP</a> và Nghị định số <a href="/van-ban/chi-tiet/179389" target="_blank" rel="noopener noreferrer">190/2025/NĐ-CP</a>.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">4. Việc xử lý vi phạm hành chính về sở hữu công nghiệp trên môi trường điện tử được thực hiện khi bảo đảm điều kiện về cơ sở hạ tầng, kỹ thuật, thông tin và các yêu cầu theo quy định tại Điều 18a Luật Xử lý vi phạm hành chính.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">5. Trình tự, thủ tục xử phạt vi phạm hành chính thực hiện theo quy định tại Mục 1 Chương III của Luật Xử lý vi phạm hành chính.”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="17d7448d-b680-4467-a05f-64c3a6795244" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 13. Sửa đổi, bổ sung khoản 2, khoản 3 và bổ sung khoản 3a vào sau khoản 3 Điều 31</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">“2. Biện pháp khắc phục hậu quả buộc thay đổi tên doanh nghiệp, tên hộ kinh doanh hoặc buộc loại bỏ yếu tố vi phạm trong tên doanh nghiệp, tên hộ kinh doanh</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Trường hợp người có thẩm quyền ra quyết định xử phạt vi phạm hành chính hoặc quyết định áp dụng biện pháp khắc phục hậu quả trong đó có áp dụng biện pháp khắc phục hậu quả là buộc thay đổi tên doanh nghiệp, tên hộ kinh doanh hoặc buộc loại bỏ yếu tố vi phạm trong tên doanh nghiệp, tên hộ kinh doanh thì cơ quan có thẩm quyền xử phạt vi phạm gửi quyết định cho các bên liên quan và cơ quan đăng ký kinh doanh để biết. Trong thời hạn 60 ngày, kể từ ngày quyết định xử phạt vi phạm hành chính hoặc quyết định áp dụng biện pháp khắc phục hậu quả có hiệu lực thi hành, doanh nghiệp vi phạm có trách nhiệm tiến hành thay đổi tên doanh nghiệp, tên hộ kinh doanh, loại bỏ yếu tố vi phạm trong tên doanh nghiệp, tên hộ kinh doanh và báo cáo kết quả thực hiện cho người ban hành quyết định xử phạt vi phạm hành chính trong vòng 10 ngày kể từ ngày kết thúc việc thay đổi tên doanh nghiệp, tên hộ kinh doanh, loại bỏ yếu tố vi phạm trong tên doanh nghiệp, tên hộ kinh doanh;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Trường hợp doanh nghiệp, hộ kinh doanh vi phạm không tiến hành thủ tục thay đổi tên doanh nghiệp, tên hộ kinh doanh, loại bỏ yếu tố vi phạm trong tên doanh nghiệp, tên hộ kinh doanh thì bị cưỡng chế thi hành. Trong thời hạn 10 ngày, kể từ ngày hết thời hạn thi hành quyết định nêu tại điểm a khoản này, cơ quan có thẩm quyền xử phạt vi phạm thông báo cho cơ quan đăng ký kinh doanh để phối hợp xử lý.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">Trong thời hạn 05 ngày, kể từ ngày nhận được thông báo của cơ quan có thẩm quyền xử phạt vi phạm, cơ quan đăng ký kinh doanh ra Thông báo yêu cầu doanh nghiệp, hộ kinh doanh báo cáo giải trình và xử lý theo quy định tại điểm c khoản 1 Điều 216 Luật Doanh nghiệp;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Trách nhiệm, phối hợp xử lý tên doanh nghiệp, tên hộ kinh doanh xâm phạm quyền sở hữu công nghiệp:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">Chủ thể quyền sở hữu công nghiệp có trách nhiệm cung cấp đầy đủ các hồ sơ, tài liệu theo quy định và phối hợp với các cơ quan có thẩm quyền trong quá trình xử lý tên doanh nghiệp, tên hộ kinh doanh xâm phạm quyền sở hữu công nghiệp.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">Cơ quan đăng ký kinh doanh nơi doanh nghiệp, hộ kinh doanh đặt trụ sở chính có trách nhiệm tiếp nhận, xử lý yêu cầu thay đổi tên doanh nghiệp, tên hộ kinh doanh theo đề nghị của cơ quan có thẩm quyền xử phạt vi phạm hoặc chủ thể quyền sở hữu công nghiệp; yêu cầu doanh nghiệp, hộ kinh doanh báo cáo giải trình theo quy định của Luật Doanh nghiệp, pháp luật đối với hộ kinh doanh khi nhận được thông báo của cơ quan có thẩm quyền xử phạt vi phạm.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">3. Biện pháp khắc phục hậu quả buộc hoàn trả tên miền</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Trong trường hợp áp dụng biện pháp khắc phục hậu quả là buộc hoàn trả tên miền thì tổ chức, cá nhân có trách nhiệm tiến hành thủ tục hoàn trả tên miền tại Nhà đăng ký quản lý tên miền trong thời hạn 30 ngày kể từ ngày quyết định xử phạt vi phạm hành chính hoặc quyết định áp dụng biện pháp khắc phục hậu quả có hiệu lực thi hành;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Sau thời hạn nêu trên nếu tổ chức, cá nhân vi phạm không tiến hành thủ tục hoàn trả tên miền thì bị cưỡng chế buộc thu hồi tên miền;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">c) Bộ Khoa học và Công nghệ (Trung tâm Internet Việt Nam) phối hợp với Nhà đăng ký tên miền quốc gia Việt Nam “.vn” có trách nhiệm thu hồi tên miền quốc gia Việt Nam “.vn”, Nhà đăng ký tên miền quốc tế tại Việt Nam, Tổ chức quản lý tên miền dùng chung cấp cao nhất mới (New gTLD Registry) tại Việt Nam có trách nhiệm thu hồi tên miền quốc tế để thi hành quyết định cưỡng chế nêu tại điểm b khoản này.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">Nhà đăng ký tên miền, Tổ chức quản lý tên miền dùng chung cấp cao nhất mới (New gTLD Registry) tại Việt Nam có trách nhiệm thông báo việc thu hồi tên miền cho chủ thể đăng ký sử dụng tên miền, thực hiện nghiệp vụ thu hồi tên miền và gửi văn bản báo cáo cho người ra quyết định xử phạt và Bộ Khoa học và Công nghệ (Trung tâm Internet Việt Nam) trong vòng 10 ngày kể từ ngày hoàn tất việc thu hồi tên miền.”</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">3a. Biện pháp khắc phục hậu quả ngăn chặn truy cập tên miền xâm phạm quyền sở hữu công nghiệp</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">Trong trường hợp cơ quan nhà nước có thẩm quyền xử phạt vi phạm hành chính theo Nghị định này ban hành quyết định áp dụng biện pháp ngăn chặn truy cập đối với tên miền xâm phạm quyền sở hữu công nghiệp, trong vòng 05 ngày kể từ ngày nhận được quyết định, doanh nghiệp viễn thông có trách nhiệm áp dụng biện pháp kỹ thuật cần thiết để ngăn chặn truy cập đến tên miền trên mạng Internet tại Việt Nam và gửi văn bản báo cáo kết quả cho cơ quan ban hành quyết định xử phạt trong vòng 10 ngày sau khi hoàn tất việc ngăn chặn truy cập tên miền. Trong trường hợp cơ quan có thẩm quyền ban hành quyết định khôi phục truy cập đối với tên miền, doanh nghiệp viễn thông có trách nhiệm khôi phục truy cập đến tên miền trên mạng Internet tại Việt Nam trong vòng 3 ngày kể từ khi nhận được quyết định khôi phục truy cập tên miền và gửi văn bản báo cáo cho người ban hành quyết định trong vòng 10 ngày kể từ ngày hoàn tất việc khôi phục truy cập.”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="8c4af786-fb53-43a9-8277-0579232a6f44" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 14. Sửa đổi, bổ sung Điều 32</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>“Điều 32. Sửa đổi, bổ sung, đính chính, hủy bỏ, ban hành quyết định mới về xử lý vi phạm hành chính</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">1. Việc sửa đổi, bổ sung, đính chính, hủy bỏ, ban hành quyết định mới về xử lý vi phạm hành chính thực hiện theo quy định của pháp luật về xử lý vi phạm hành chính.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">2. Trường hợp ban hành quyết định sửa đổi, bổ sung, đính chính, hủy bỏ hoặc ban hành quyết định mới về xử lý vi phạm hành chính theo quy định tại khoản 1 Điều này, người có thẩm quyền xử phạt trong phạm vi thẩm quyền của mình, căn cứ tính chất, tình trạng thi hành quyết định và quy định pháp luật, có liên quan, quyết định áp dụng một hoặc một số biện pháp sau đây:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">a) Trường hợp quyết định xử phạt vi phạm hành chính đã được tổ chức, cá nhân thi hành, người có thẩm quyền xử phạt đề nghị Kho bạc Nhà nước nơi đã thu tiền phạt hoàn trả một phần hoặc toàn bộ tiền phạt đã nộp theo quyết định sửa đổi, hủy bỏ hoặc quyết định mới trong thời hạn 15 ngày kể từ ngày ban hành quyết định sửa đổi, hủy bỏ, ban hành mới;</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">b) Đối với tang vật, phương tiện vi phạm hành chính:</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">Trường hợp hàng hóa, vật phẩm, phương tiện kinh doanh đang bị tạm giữ và chưa bị xử lý thì trả lại cho tổ chức, cá nhân theo quyết định sửa đổi, hủy bỏ hoặc quyết định mới.</span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">Trường hợp hàng hóa, vật phẩm, phương tiện kinh doanh đã bị xử lý thì tổ chức, cá nhân yêu cầu xử lý vi phạm có trách nhiệm bồi thường cho tổ chức, cá nhân bị xử lý theo cam kết đã thực hiện khi yêu cầu xử lý vi phạm, nếu có.”.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="648b5621-577c-493b-a513-199fdc8c20e6" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 15. Bãi bỏ khoản 2 và 3 Điều 35</strong></span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="62ed2d86-baac-4118-a7ee-05e1f65f1368" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 16. Thay thế một số cụm từ của Nghị định số <a href="/van-ban/chi-tiet/31905" target="_blank" rel="noopener noreferrer">99/2013/NĐ-CP</a> ngày 29 tháng 8 năm 2013 của Chính phủ quy định xử phạt vi phạm hành chính trong lĩnh vực sở hữu công nghiệp đã được sửa đổi, bổ sung bởi Nghị định số <a href="/van-ban/chi-tiet/154199" target="_blank" rel="noopener noreferrer">126/2021/NĐ-CP</a> ngày 30 tháng 12 năm 2021 và Nghị định số <a href="/van-ban/chi-tiet/170812" target="_blank" rel="noopener noreferrer">46/2024/NĐ-CP</a> ngày 04 tháng 5 năm 2024 của Chính phủ</strong></span></p>
+    <p class="prov-clause" data-block-id="" data-node-id="" id="12623e01-3f12-43c4-876e-991ce188397a" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">1. Thay thế cụm từ “được quy định tại các Điều từ 16 đến 21 của Nghị định này” bằng cụm từ “được quy định từ Điều 15a đến Điều 21 Nghị định này” tại khoản 2 Điều 2.</span></p>
+    <p class="prov-clause" data-block-id="" data-node-id="" id="065bc204-64ed-4690-a6fe-245a19408761" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">2. Thay thế cụm từ “Bộ Thông tin và Truyền thông” bằng cụm từ “Bộ Khoa học và Công nghệ” tại khoản 3, khoản 4 Điều 3a.</span></p>
+    <p class="prov-clause" data-block-id="" data-node-id="" id="8bf5e71e-378c-4afa-88d0-bab7eeb7de44" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">3. Thay thế cụm từ “giữ nguyên hiện trạng tên miền” bằng cụm từ “giữ nguyên hiện trạng đăng ký, sử dụng tên miền” tại khoản 3, khoản 4 Điều 3a.</span></p>
+    <p class="prov-clause" data-block-id="" data-node-id="" id="2a771726-4a8a-42fc-96a9-b775bd3fa967" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">4. Thay thế cụm từ “nhà đăng ký tên miền” bằng cụm từ “nhà đăng ký tên miền, Tổ chức quản lý tên miền dùng chung cấp cao nhất mới (New gTLD Registry) tại Việt Nam” tại khoản 3, khoản 4 Điều 3a.</span></p>
+    <p class="prov-clause" data-block-id="" data-node-id="" id="6e2cbd38-890e-4540-990d-755cd9434f50" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">5. Thay thế cụm từ “tên doanh nghiệp” bằng cụm từ “tên doanh nghiệp, tên hộ kinh doanh” tại điểm d khoản 17 Điều 11. </span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="2a42db9a-77cf-4608-b53b-df8189ffca08" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 17. Trách nhiệm tổ chức thực hiện</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">Các Bộ trưởng, Thủ trưởng cơ quan ngang bộ, Chủ tịch Ủy ban nhân dân cấp tỉnh và các cơ quan liên quan chịu trách nhiệm tổ chức thực hiện Nghị định này.</span></p>
+    <p class="prov-article" data-block-id="" data-node-id="" id="1506dd41-514d-40f8-aa38-91638038f750" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt"><strong>Điều 18. Điều khoản thi hành</strong></span></p>
+    <p class="prov-content" style="margin: 6.0pt 0 14.0pt"><span style="font-size: 12.0pt">Nghị định này có hiệu lực thi hành từ ngày 15 tháng 7 năm 2026.</span></p>
+    <p>&nbsp;</p>
+    <table border="0" class="prov-table" style="border-collapse: collapse; width: 100%; margin: 15px 0;">
+     <tbody>
+      <tr>
+       <td style="padding: 8px;">
+        <p>&nbsp;</p>
+        <p style="margin: 6.0pt 0 0pt"><span style="font-size: 12.0pt"><strong><em>Nơi nhận:<br></em></strong></span><span style="font-size: 8.0pt">- Ban Bí thư Trung ương Đảng;<br>
+           - Thủ tướng, các Phó Thủ tướng Chính phủ;<br>
+           - Các bộ, cơ quan ngang bộ;<br>
+           - HĐND, UBND các tỉnh, thành phố trực thuộc trung ương;<br>
+           - Văn phòng Trung ương và các Ban của Đảng;<br>
+           - Văn phòng Tổng Bí thư;<br>
+           - Văn phòng Chủ tịch nước;<br>
+           - Hội đồng Dân tộc và các Ủy ban của Quốc hội;<br>
+           - Văn phòng Quốc hội;<br>
+           - Tòa án nhân dân tối cao;<br>
+           - Viện kiểm sát nhân dân tối cao;<br>
+           - Kiểm toán nhà nước;<br>
+           - Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam;<br>
+           - Cơ quan trung ương của các tổ chức chính trị - xã hội;<br>
+           - VPCP: BTCN, các PCN, Trợ lý TTg, TGĐ Cổng TTĐT,<br>
+           các Vụ, Cục, đơn vị trực thuộc, Công báo;<br>
+           - Lưu: VT, KGVX (2b).</span></p></td>
+       <td style="padding: 8px;">
+        <p style="text-align: center; margin: 6.0pt 0 0pt"><span style="font-size: 12.0pt"><strong>TM. CHÍNH PHỦ</strong><br><strong>KT. THỦ TƯỚNG</strong><br><strong>PHÓ THỦ TƯỚNG</strong><br><br><br><br><br><strong>Hồ Quốc Dũng</strong></span></p></td>
+      </tr>
+     </tbody>
+    </table>
+    <p>&nbsp;</p>
+   </article>
+  </main>
+ </body>
+</html>

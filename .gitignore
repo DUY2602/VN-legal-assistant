@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.py[cod]
+
+data/lightrag_storage/
+data/legal_graph.html
+data/legal_reference_graph.html
+lightrag.log
